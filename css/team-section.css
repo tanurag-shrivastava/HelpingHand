@@ -1,0 +1,74 @@
+.team-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.team-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.team-header p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.team-tabs {
+  margin-bottom: 30px;
+}
+
+.team-tab {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.team-tab:hover,
+.team-tab.active {
+  background: #0056b3;
+}
+
+.team-grids {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-grid {
+  display: none;
+  gap: 20px;
+}
+
+.team-grid.active {
+  display: flex;
+}
+
+.team-member {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.member-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.member-name {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.member-position {
+  color: #666;
+}

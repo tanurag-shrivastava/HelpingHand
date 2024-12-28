@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/programs.css">
+    <link rel="stylesheet" href="css/section3.css">
+    <link rel="stylesheet" href="css/sustainableSlider.css">
+    <link rel="stylesheet" href="css/team-section.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/copyright.css">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo">
+               <img src="" alt="logo">
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <div class="dropdown">
+                    <button class="dropbtn">About Us</button>
+                    <div class="dropdown-content">
+                        <a href="/vision">Vision</a>
+                        <a href="/mission">Mission</a>
+                        <a href="/legal">Legal Information</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Programs</button>
+                    <div class="dropdown-content">
+                        <a href="/education">Education</a>
+                        <a href="/health">Health</a>
+                        <a href="/environment">Environment</a>
+                        <a href="/grassroots">Empowering Grassroots</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Get Involved</button>
+                    <div class="dropdown-content">
+                        <a href="/individuals">Individuals</a>
+                        <a href="/partnerships">Corporate Partnerships</a>
+                        <a href="/volunteers">Volunteers</a>
+                    </div>
+                </div>
+
+                <a href="/contact">Contact Us</a>
+                <a href="/faq">FAQs</a>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="#"><i data-lucide="facebook"></i></a>
+                <a href="#"><i data-lucide="twitter"></i></a>
+                <a href="#"><i data-lucide="instagram"></i></a>
+                <a href="#"><i data-lucide="linkedin"></i></a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-nav-links">
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropbtn">About Us</button>
+                    <div class="mobile-dropdown-content">
+                        <a href="/vision">Vision</a>
+                        <a href="/mission">Mission</a>
+                        <a href="/legal">Legal Information</a>
+                    </div>
+                </div>
+
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropbtn">Programs</button>
+                    <div class="mobile-dropdown-content">
+                        <a href="/education">Education</a>
+                        <a href="/health">Health</a>
+                        <a href="/environment">Environment</a>
+                        <a href="/grassroots">Empowering Grassroots</a>
+                    </div>
+                </div>
+
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropbtn">Get Involved</button>
+                    <div class="mobile-dropdown-content">
+                        <a href="/individuals">Individuals</a>
+                        <a href="/partnerships">Corporate Partnerships</a>
+                        <a href="/volunteers">Volunteers</a>
+                    </div>
+                </div>
+
+                <a href="/contact">Contact Us</a>
+                <a href="/faq">FAQs</a>
+            </div>
+
+            <div class="mobile-social-links">
+                <a href="#"><i data-lucide="facebook"></i></a>
+                <a href="#"><i data-lucide="twitter"></i></a>
+                <a href="#"><i data-lucide="instagram"></i></a>
+                <a href="#"><i data-lucide="linkedin"></i></a>
+            </div>
+        </div>
+    </nav>
+<!-- 
+    <main>
+        <h1>Welcome to Our NGO</h1>
+        <p>Making a difference, one step at a time.</p>
+    </main> -->
+
+    <main>
+      <section class="hero-section">
+          <div class="hero-slider">
+              <div class="slide active">
+                  <div class="slide-bg" style="background-image: url('Assets/IMG-20241226-WA0009.jpg')"></div>
+                  <div class="slide-content">
+                      <h2>Education Program</h2>
+                      <p>Providing quality education and technical training to underprivileged communities.</p>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="slide-bg" style="background-image: url('Assets/IMG-20241226-WA0012.jpg')"></div>
+                  <div class="slide-content">
+                      <h2>Healthcare Initiative</h2>
+                      <p>Delivering essential healthcare services to remote areas and urban slums.</p>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="slide-bg" style="background-image: url('Assets/IMG-20241226-WA0011.jpg')"></div>
+                  <div class="slide-content">
+                      <h2>Environmental Conservation</h2>
+                      <p>Working towards sustainable development and environmental protection.</p>
+                  </div>
+              </div>
+              <div class="slide">
+                  <div class="slide-bg" style="background-image: url('Assets/IMG-20241226-WA0013.jpg')"></div>
+                  <div class="slide-content">
+                      <h2>Community Empowerment</h2>
+                      <p>Empowering local communities through skill development and support.</p>
+                  </div>
+              </div>
+              
+              <button class="slider-btn prev-btn">
+                  <i data-lucide="chevron-left"></i>
+              </button>
+              <button class="slider-btn next-btn">
+                  <i data-lucide="chevron-right"></i>
+              </button>
+          </div>
+      
+          <div class="action-buttons">
+              <a href="/donation" class="action-btn donation">
+                  <i data-lucide="heart"></i>
+                  DONATION
+              </a>
+              <a href="/volunteer" class="action-btn volunteer">
+                  <i data-lucide="hand-heart"></i>
+                  VOLUNTEER
+              </a>
+              <a href="/fundraise" class="action-btn fundraise">
+                  <i data-lucide="coins"></i>
+                  FUNDRAISE
+              </a>
+          </div>
+      </section>
+  </main>
+
+      <!-- section 2 -->
+
+       <!-- Programs Section -->
+       <section class="programs-section">
+        <div class="programs-header">
+            <h2>Our Programs</h2>
+            <p>Note: choose your design/image for below boxes</p>
+        </div>
+        
+        <div class="programs-grid">
+            <!-- Education Program -->
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80" alt="Education Program">
+                    <div class="program-title">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="program-overlay">
+                        <h3>Education</h3>
+                        <p>Empowering communities through quality education and skill development programs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Healthcare Program -->
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80" alt="Healthcare Program">
+                    <div class="program-title">
+                        <h3>Healthcare</h3>
+                    </div>
+                    <div class="program-overlay">
+                        <h3>Healthcare</h3>
+                        <p>Providing accessible healthcare services to underserved communities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Environment Program -->
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80" alt="Environment Program">
+                    <div class="program-title">
+                        <h3>Environment Support</h3>
+                    </div>
+                    <div class="program-overlay">
+                        <h3>Environment Support</h3>
+                        <p>Promoting sustainable practices and environmental conservation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grassroots Program -->
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80" alt="Empowering Grassroots">
+                    <div class="program-title">
+                        <h3>Empowering Grassroots</h3>
+                    </div>
+                    <div class="program-overlay">
+                        <h3>Empowering Grassroots</h3>
+                        <p>Building stronger communities through grassroots initiatives and support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 3  -->
+
+    <section class="video-slider-section">
+      <div class="section-header">
+        <h2>Our Work Stories</h2>
+        <p>Watch how we're making a difference in communities</p>
+      </div>
+      
+      <div class="video-slider-container">
+        <div class="video-slider-track">
+          <div class="video-slide active">
+            <video src="Assets/VID-20241226-WA0003.mp4" muted loop></video>
+            <div class="video-content">
+              <h3>Education Impact</h3>
+              <p> Shree Gaudham Gausala, Badagaon
+              </p>
+            </div>
+          </div>
+    
+          <div class="video-slide">
+            <video src="Assets/VID-20241226-WA0004.mp4" muted loop></video>
+            <div class="video-content">
+              <!-- <h3>Healthcare Programs</h3> -->
+              <p>Shree Nandi Gausal, Dilari
+              </p>
+            </div>
+          </div>
+    
+          <div class="video-slide">
+            <video src="Assets/VID-20241226-WA0005.mp4" muted loop></video>
+            <div class="video-content">
+              <!-- <h3>Community Development</h3> -->
+              <p>Seva Upkram- Helping Group
+              </p>
+            </div>
+          </div>
+    
+          <div class="video-slide">
+            <video src="https://player.vimeo.com/external/384761655.sd.mp4?s=383ab4dbc773cd0d5ece3af208d8f963368f67e4&profile_id=164&oauth2_token_id=57447761" muted loop></video>
+            <div class="video-content">
+              <!-- <h3>Environmental Projects</h3> -->
+              <p>Seva Prakalp- Parvati Kitchin</p>
+            </div>
+          </div>
+        </div>
+        
+        <button class="video-slider-btn video-prev-btn">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="video-slider-btn video-next-btn">
+          <i data-lucide="chevron-right"></i>
+        </button>
+        
+        <div class="video-slider-dots"></div>
+      </div>
+    </section>
+
+    <!-- section 4  -->
+    <section class="team-section">
+      <div class="team-header">
+        <h2>Our Team</h2>
+        <p>Meet the dedicated individuals working towards our mission</p>
+      </div>
+      
+      <div class="team-tabs">
+        <button class="team-tab active" data-category="founder">Founder</button>
+        <button class="team-tab" data-category="trustees">Trustees</button>
+        <button class="team-tab" data-category="advisors">Council of Advisors</button>
+        <button class="team-tab" data-category="rural">Rural Development</button>
+      </div>
+      
+      <div class="team-grids">
+        <div class="team-grid active" data-category="founder">
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" 
+                 alt="John Doe" class="member-image" loading="lazy">
+            <div class="member-info">
+              <h3 class="member-name">John Doe</h3>
+              <p class="member-position">Founder & CEO</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="team-grid" data-category="trustees">
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80" 
+                 alt="Sarah Johnson" class="member-image" loading="lazy">
+            <div class="member-info">
+              <h3 class="member-name">Sarah Johnson</h3>
+              <p class="member-position">Board Chair</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80" 
+                 alt="Michael Brown" class="member-image" loading="lazy">
+            <div class="member-info">
+              <h3 class="member-name">Michael Brown</h3>
+              <p class="member-position">Treasurer</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="team-grid" data-category="advisors">
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80" 
+                 alt="Emily Chen" class="member-image" loading="lazy">
+            <div class="member-info">
+              <h3 class="member-name">Emily Chen</h3>
+              <p class="member-position">Education Advisor</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80" 
+                 alt="David Wilson" class="member-image" loading="lazy">
+            <div class="member-info">
+              <h3 class="member-name">David Wilson</h3>
+              <p class="member-position">Technology Advisor</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="team-grid" data-category="rural">
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80" 
+                 alt="Rajesh Kumar" class="member-image" loading="lazy">
+            <div class="member-info">
+              <h3 class="member-name">Rajesh Kumar</h3>
+              <p class="member-position">Program Director</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80" 
+                 alt="Priya Sharma" class="member-image" loading="lazy">
+            <div class="member-info">
+              <h3 class="member-name">Priya Sharma</h3>
+              <p class="member-position">Community Coordinator</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+    <section class="sdg-goals">
+        <div class="sdg-header">
+          <h2>Our Achievements</h2>
+          <p>Working together towards a better and sustainable future for all</p>
+        </div>
+        
+        <div class="sdg-slider-container">
+          <div class="sdg-slider-track">
+            <div class="sdg-slide">
+              <img src="Assets/IMG-20241226-WA0016.jpg" alt="No Poverty">
+              <div class="sdg-slide-content">
+                <h3>No Poverty</h3>
+                <p>End poverty in all its forms everywhere</p>
+              </div>
+            </div>
+      
+            <div class="sdg-slide">
+              <img src="Assets/IMG-20241226-WA0015.jpg" alt="Zero Hunger">
+              <div class="sdg-slide-content">
+                <h3>Zero Hunger</h3>
+                <p>End hunger, achieve food security and improved nutrition</p>
+              </div>
+            </div>
+      
+            <div class="sdg-slide">
+              <img src="Assets/IMG-20241226-WA0014.jpg" alt="Quality Education">
+              <div class="sdg-slide-content">
+                <h3>Quality Education</h3>
+                <p>Ensure inclusive and equitable quality education</p>
+              </div>
+            </div>
+
+             <div class="sdg-slide">
+              <img src="Assets/IMG-20241226-WA0009.jpg" alt="Life Below Water">
+              <div class="sdg-slide-content">
+                <h3>Life Below Water</h3>
+                <p>Conserve and sustainably use the oceans, seas and marine resources</p>
+              </div>
+            </div>
+          </div>
+          
+          <button class="sdg-slider-btn sdg-prev-btn">←</button>
+          <button class="sdg-slider-btn sdg-next-btn">→</button>
+          
+          <div class="sdg-slider-dots"></div>
+        </div>
+      </section>
+
+      <!-- footer  -->
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Vision</li>
+              <li>Mission</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Programs</h3>
+            <ul>
+              <li>Education</li>
+              <li>Health</li>
+              <li>Environment</li>
+              <li>Empowering Grassroots</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Get Involved</h3>
+            <ul>
+              <li>Individuals</li>
+              <li>Corporate Partnerships</li>
+              <li>Volunteers</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resource Centre</h3>
+            <ul>
+              <li>News</li>
+              <li>Media</li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact Address:</h3>
+            <p>XYZ fgf fg, mf</p>
+            <p>Dist: Chhatarpur, PIN-471001</p>
+            <p>Madhya Pradesh</p>
+            <h3>Contact No:</h3>
+            <p>WhatsApp: 0000000000</p>
+            <p>Mobile: 0000000000</p>
+            <p>Email: xyz@gmail.com</p>
+          </div>
+        </div>
+
+      </footer>
+      <!-- <br style="height:  1px;"> -->
+
+      <div class="copyright">
+        <span>(c) xyz company</span>
+        <span>Design & Powered by <a href="https://www.icoesolution.com">ICOESS Solutions Pvt. Ltd</a></span>
+      </div>
+      
+  
+
+
+    <!-- scripts -->
+    <script src="js/navbar.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/programs.js"></script>
+    <script src="js/section3.js"></script>
+    <script src="js/sustainableSlider.js"></script>
+    <script src="js/team-section.js"></script>
+    <script src="js/footer.js"></script>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

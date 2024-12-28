@@ -1,0 +1,142 @@
+/* SDG Goals Section */
+.sdg-goals {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+  }
+  
+  .sdg-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .sdg-header h2 {
+    font-size: 2rem;
+    color: #1a365d;
+    margin-bottom: 1rem;
+  }
+  
+  .sdg-header p {
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Slider Container */
+  .sdg-slider-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 1rem;
+  }
+  
+  .sdg-slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Slides */
+  .sdg-slide {
+    min-width: calc(50% - 2rem);
+    margin: 0 1rem;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .sdg-slide:hover {
+    transform: translateY(-5px);
+  }
+  
+  .sdg-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .sdg-slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+  }
+  
+  .sdg-slide-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sdg-slide-content p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  
+  /* Navigation Buttons */
+  .sdg-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #2d3748;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+  
+  .sdg-slider-btn:hover {
+    background: #f7fafc;
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  .sdg-prev-btn {
+    left: -20px;
+  }
+  
+  .sdg-next-btn {
+    right: -20px;
+  }
+  
+  /* Dots Navigation */
+  .sdg-slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .sdg-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sdg-dot.active {
+    background: #2b6cb0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sdg-slide {
+      min-width: calc(100% - 2rem);
+    }
+    
+    .sdg-slider-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+    }
+  }

@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Slider */
+.hero-slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slide-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.slide-content h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.8s ease-out 0.3s;
+}
+
+.slide-content p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.8s ease-out 0.5s;
+}
+
+.slide.active .slide-content h2,
+.slide.active .slide-content p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Slider Navigation */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.slider-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.prev-btn {
+  left: 2rem;
+}
+
+.next-btn {
+  right: 2rem;
+}
+
+/* Action Buttons */
+.action-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.action-btn i {
+  font-size: 1.5rem;
+}
+
+.action-btn.donation {
+  background: rgba(239, 68, 68, 0.8);
+}
+
+.action-btn.volunteer {
+  background: rgba(37, 99, 235, 0.8);
+}
+
+.action-btn.fundraise {
+  background: rgba(22, 163, 74, 0.8);
+}
+
+.action-btn:hover {
+  transform: translateY(-5px);
+  filter: brightness(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slide-content h2 {
+      font-size: 2.5rem;
+  }
+
+  .slide-content p {
+      font-size: 1rem;
+  }
+
+  .slider-btn {
+      width: 40px;
+      height: 40px;
+  }
+
+  .prev-btn {
+      left: 1rem;
+  }
+
+  .next-btn {
+      right: 1rem;
+  }
+
+  .action-btn {
+      padding: 1rem;
+      font-size: 0.875rem;
+  }
+}

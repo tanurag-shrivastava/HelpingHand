@@ -1,0 +1,17 @@
+.copyright {
+    display: flex; /* Align items in a row */
+    justify-content: space-between; /* Space items to the edges */
+    align-items: center; /* Vertically center items */
+    background-color: #2d2d2d; /* Optional: Background color */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding around the section */
+    font-size: 14px; /* Optional: Font size */
+  }
+  .copyright a {
+    color: #00ffff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .copyright a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
